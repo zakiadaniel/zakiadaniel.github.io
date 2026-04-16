@@ -4,29 +4,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zakia Mohammadi Portfolio</title>
+    <title>Zakia Mohammadi | Software Engineer</title>
+    <meta name="description" content="Professional portfolio of Zakia Mohammadi, Software Engineer.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
+    <div class="glow-bg"></div>
+    <header class="navbar">
+        <div class="logo">ZM.</div>
         <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Contact</a></li>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
+        <a href="#contact" class="btn btn-outline">Let's Talk</a>
     </header>
+
     <main>
-        <section>
-            <h1>Zakia Mohammadi</h1>
-            <p>Software Engineer</p>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <span class="badge">Available for Work</span>
+                <h1 class="hero-title">Hi, I'm Zakia Mohammadi.<br><span class="highlight">Software Engineer</span></h1>
+                <p class="hero-subtitle">I build high-performance, elegant software solutions with a focus on seamless
+                    user experiences and modern architecture.</p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#about" class="btn btn-secondary">Learn More</a>
+                </div>
+            </div>
+            <div class="hero-image-container">
+                <img src="profile_avatar.png" alt="Geometric Avatar" class="hero-image">
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="content-wrapper">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-grid">
+                    <p class="about-text">
+                        With a passion for clean code and intuitive design, I specialize in bringing ideas to life
+                        through robust engineering. My approach combines technical excellence with a deep understanding
+                        of user needs. Let's create something extraordinary together.
+                    </p>
+                    <div class="skills">
+                        <span class="skill-tag">Javascript</span>
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">CSS3</span>
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">Git</span>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
-    <footer>
-        <p>Copyright &copy; 2026 Zakia Mohammadi</p>
+
+    <footer class="footer">
+        <p>Copyright &copy; 2026 Zakia Mohammadi. All rights reserved.</p>
     </footer>
+    <script>
+        // Smooth scrolling and simple intersection observer for fade-in
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        });
+
+        document.querySelectorAll('.section, .hero-content, .hero-image-container').forEach((el) => observer.observe(el));
+    </script>
 </body>
 
 </html>

@@ -5,26 +5,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zakia Mohammadi | Computer Science (Cybersecurity)</title>
-    <meta name="description" content="Professional portfolio of Zakia Mohammadi, Computer Science (Cybersecurity).">
-    <!-- Google Fonts -->
+    <meta name="description"
+        content="Portfolio of Zakia Mohammadi, a computer science student at Arizona State University concentrating in cybersecurity.">
+    <meta name="theme-color" content="#0e1116">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23171c24'/%3E%3Ctext x='16' y='21' text-anchor='middle' font-family='Georgia,serif' font-size='13' fill='%23e7c27a'%3EZM%3C/text%3E%3C/svg%3E">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Instrument+Serif&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script>document.documentElement.classList.add("js");</script>
 </head>
 
 <body>
-    <div class="glow-bg"></div>
+    <div class="glow-bg" aria-hidden="true"></div>
+    <a class="skip-link" href="#home">Skip to content</a>
+
     <header class="navbar">
-        <div class="logo">Z.M.</div>
-        <nav>
+        <a class="logo" href="#home">Zakia Mohammadi</a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+            <span class="sr-only">Menu</span>
+            <span class="nav-toggle-bar"></span>
+            <span class="nav-toggle-bar"></span>
+        </button>
+        <nav id="site-nav">
             <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#education">Education</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact Me</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -32,38 +41,79 @@
     <main>
         <section id="home" class="hero">
             <div class="hero-content">
-                <span class="badge">Available for Work</span>
-                <h1 class="hero-title">Hi, I'm Zakia Mohammadi.<br><span class="highlight">Computer Science
-                        (Cybersecurity)</span></h1>
-                <p class="hero-subtitle">I build high-performance, elegant software solutions with a focus on seamless
-                    user experiences and modern architecture.</p>
+                <p class="eyebrow">Computer Science · Cybersecurity</p>
+                <h1 class="hero-title">Zakia Mohammadi</h1>
+                <p class="hero-subtitle">Computer science student at Arizona State University, graduating December 2026
+                    with a concentration in cybersecurity. I build web software and support the systems people rely on.</p>
                 <div class="hero-actions">
-                    <a href="#projects" class="btn btn-primary">View My Work</a>
-                    <a href="#about" class="btn btn-secondary">Learn More</a>
+                    <a href="#projects" class="btn btn-primary">View projects</a>
+                    <a href="#contact" class="btn btn-secondary">Get in touch</a>
                 </div>
             </div>
+            <aside class="profile-card" aria-label="At a glance">
+                <p class="profile-status"><span class="status-dot" aria-hidden="true"></span> Open to opportunities</p>
+                <dl class="profile-facts">
+                    <div>
+                        <dt>Degree</dt>
+                        <dd>B.S. Computer Science, Cybersecurity<br>Arizona State University · December 2026</dd>
+                    </div>
+                    <div>
+                        <dt>Certificate</dt>
+                        <dd>Applied Machine Learning and AI<br>Cornell University · June 2025</dd>
+                    </div>
+                    <div>
+                        <dt>Currently</dt>
+                        <dd>IT Associate at Alekain<br>Farsi interpreter at Baystate</dd>
+                    </div>
+                </dl>
+            </aside>
         </section>
 
         <section id="about" class="section">
             <div class="content-wrapper">
-                <h2 class="section-title">About Me</h2>
+                <p class="section-kicker">01 — About</p>
+                <h2 class="section-title">A security focus, with software and support work beside it.</h2>
                 <div class="about-grid">
-                    <p class="about-text">
-                        With a passion for clean code and intuitive design, I specialize in bringing ideas to life
-                        through robust engineering. My approach combines technical excellence with a deep understanding
-                        of user needs. Let's create something extraordinary together.
-                    </p>
-                    <div class="skills">
-                        <span class="skill-tag">Java</span>
-                        <span class="skill-tag">C/C++</span>
-                        <span class="skill-tag">Python</span>
-                        <span class="skill-tag">C#</span>
-                        <span class="skill-tag">Javascript</span>
-                        <span class="skill-tag">React</span>
-                        <span class="skill-tag">Node.js</span>
-                        <span class="skill-tag">CSS3</span>
-                        <span class="skill-tag">HTML5</span>
-                        <span class="skill-tag">Git</span>
+                    <div class="about-copy">
+                        <p>
+                            Coursework covers network security, cryptography, ethical hacking, operations security, and
+                            data structures. In June 2025 I completed Cornell’s Applied Machine Learning and AI
+                            certificate, covering machine learning, deep learning, and neural networks.
+                        </p>
+                        <p>
+                            In fall 2025 I interned as a full-stack developer at Picnic, building web applications with
+                            React, Node.js, and PostgreSQL. At Alekain I support end users and help with hardware,
+                            software, and network administration. I also interpret Farsi, and previously taught math and
+                            test prep.
+                        </p>
+                    </div>
+                    <div class="skill-groups" aria-label="Skills">
+                        <div class="skill-group">
+                            <h3>Languages</h3>
+                            <ul>
+                                <li>Java</li>
+                                <li>C / C++</li>
+                                <li>Python</li>
+                                <li>C#</li>
+                                <li>JavaScript</li>
+                            </ul>
+                        </div>
+                        <div class="skill-group">
+                            <h3>Web</h3>
+                            <ul>
+                                <li>React</li>
+                                <li>Node.js</li>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>PostgreSQL</li>
+                            </ul>
+                        </div>
+                        <div class="skill-group">
+                            <h3>Tools</h3>
+                            <ul>
+                                <li>Git</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -71,110 +121,116 @@
 
         <section id="education" class="section">
             <div class="content-wrapper">
+                <p class="section-kicker">02 — Education</p>
                 <h2 class="section-title">Education</h2>
                 <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
+                    <article class="timeline-item">
+                        <div class="timeline-dot" aria-hidden="true"></div>
                         <div class="timeline-content">
                             <h3 class="timeline-title">B.S. Computer Science (Cybersecurity)</h3>
-                            <p class="timeline-subtitle">ARIZONA STATE UNIVERSITY • December 2026</p>
+                            <p class="timeline-subtitle">Arizona State University · December 2026</p>
                             <p class="timeline-text">Focused on network security, cryptography, and secure software
-                                development. Relevant coursework: Ethical Hacking, Operations Security, and Data
-                                Structures.</p>
+                                development. Relevant coursework includes ethical hacking, operations security, and data
+                                structures.</p>
                         </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
+                    </article>
+                    <article class="timeline-item">
+                        <div class="timeline-dot" aria-hidden="true"></div>
                         <div class="timeline-content">
                             <h3 class="timeline-title">Applied Machine Learning and AI Certificate</h3>
-                            <p class="timeline-subtitle">CORNELL UNIVERSITY • June 2025</p>
-                            <p class="timeline-text">Focused on machine learning and artificial intelligence. Relevant
-                                coursework: Machine Learning, Deep Learning, and Neural Networks.</p>
+                            <p class="timeline-subtitle">Cornell University · June 2025</p>
+                            <p class="timeline-text">Focused on machine learning and artificial intelligence, including
+                                machine learning, deep learning, and neural networks.</p>
                             <a href="https://mycredentials.ecornell.cornell.edu/credential/ucujiSfsbz"
-                                class="btn btn-outline"
-                                style="margin-top: 1rem; padding: 0.5rem 1rem; font-size: 0.85rem; display: inline-flex; align-items: center; gap: 0.5rem;"
-                                target="_blank" rel="noopener noreferrer">
-                                View Credential
+                                class="btn btn-outline" target="_blank" rel="noopener noreferrer">
+                                View credential
                                 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
                                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
+                                    stroke-linejoin="round" aria-hidden="true">
                                     <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
                                     <polyline points="15 3 21 3 21 9"></polyline>
                                     <line x1="10" y1="14" x2="21" y2="3"></line>
                                 </svg>
                             </a>
                         </div>
-                    </div>
+                    </article>
                 </div>
             </div>
         </section>
 
         <section id="experience" class="section">
             <div class="content-wrapper">
-                <h2 class="section-title">Professional Experience</h2>
+                <p class="section-kicker">03 — Experience</p>
+                <h2 class="section-title">Experience</h2>
                 <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
+                    <article class="timeline-item">
+                        <div class="timeline-dot" aria-hidden="true"></div>
                         <div class="timeline-content">
                             <h3 class="timeline-title">Full Stack Developer Intern</h3>
-                            <p class="timeline-subtitle">PICNIC • Fall 2025</p>
-                            <p class="timeline-text">Developed and maintained web applications using React, Node.js, and
-                                PostgreSQL. Collaborated with cross-functional teams to deliver high-quality software
-                                solutions.</p>
+                            <p class="timeline-subtitle">Picnic · Fall 2025</p>
+                            <p class="timeline-text">Built and maintained web applications with React, Node.js, and
+                                PostgreSQL, working with cross-functional teams to ship the software.</p>
                         </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
+                    </article>
+                    <article class="timeline-item">
+                        <div class="timeline-dot" aria-hidden="true"></div>
                         <div class="timeline-content">
                             <h3 class="timeline-title">IT Associate</h3>
-                            <p class="timeline-subtitle">ALEKAIN • Feb 2025 - Present</p>
-                            <p class="timeline-text">Provide technical support to end-users, troubleshoot hardware and
-                                software issues, and assist with network and system administration tasks.</p>
+                            <p class="timeline-subtitle">Alekain · February 2025 – Present</p>
+                            <p class="timeline-text">Support end users, troubleshoot hardware and software, and assist
+                                with network and system administration.</p>
                         </div>
-                    </div>
-                </div>
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
+                    </article>
+                    <article class="timeline-item">
+                        <div class="timeline-dot" aria-hidden="true"></div>
                         <div class="timeline-content">
                             <h3 class="timeline-title">Farsi Interpreter</h3>
-                            <p class="timeline-subtitle">BAYSTATE INTERPRETERS INC. • Dec 2023 - Present</p>
-                            <p class="timeline-text">Provide interpretation services to clients in need of Farsi
-                                interpretation.</p>
+                            <p class="timeline-subtitle">Baystate Interpreters Inc. · December 2023 – Present</p>
+                            <p class="timeline-text">Provide Farsi interpretation for clients.</p>
                         </div>
-                    </div>
-                </div>
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
+                    </article>
+                    <article class="timeline-item">
+                        <div class="timeline-dot" aria-hidden="true"></div>
                         <div class="timeline-content">
                             <h3 class="timeline-title">Math Instructor</h3>
-                            <p class="timeline-subtitle">ROYAL TEST PREP • Jan 2024 - Jan 2025</p>
-                            <p class="timeline-text">- Delivered online and in-person Math and English lessons for grade
-                                schools including SHSAT & SAT preparations.
-                                - Enhanced student curriculum by providing new materials and software for better
-                                performance.
-                                - Prepared and graded over 50 state mock tests per month following state standards,
-                                enhancing student success rates.
-                                - Supported the center’s administration handling students’ data, invoices, registration,
-                                and monitoring staff.</p>
+                            <p class="timeline-subtitle">Royal Test Prep · January 2024 – January 2025</p>
+                            <ul class="timeline-list">
+                                <li>Taught online and in-person math and English lessons, including SHSAT and SAT
+                                    preparation.</li>
+                                <li>Added materials and software to the student curriculum.</li>
+                                <li>Prepared and graded more than 50 state mock tests per month, following state
+                                    standards.</li>
+                                <li>Supported administration with student data, invoices, registration, and staff
+                                    monitoring.</li>
+                            </ul>
                         </div>
-                    </div>
+                    </article>
                 </div>
             </div>
         </section>
 
         <section id="projects" class="section">
             <div class="content-wrapper">
+                <p class="section-kicker">04 — Projects</p>
                 <h2 class="section-title">Projects</h2>
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <h3 class="timeline-title">Project Name</h3>
-                            <p class="timeline-subtitle">Project Description</p>
-                            <p class="timeline-text">Project Details</p>
-                        </div>
+                <p class="section-lead">Selected coursework and software, with the stack and outcome for each piece.</p>
+                <div class="project-grid">
+                    <!--
+                        Add a card per project:
+                        <article class="project-card">
+                            <p class="project-meta">2026 · Coursework</p>
+                            <h3>Project name</h3>
+                            <p>What it does and what you built.</p>
+                            <ul class="project-tags" aria-label="Technologies">
+                                <li>React</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="https://github.com/zakiadaniel" target="_blank" rel="noopener noreferrer">GitHub</a>
+                            </div>
+                        </article>
+                    -->
+                    <div class="project-pending">
+                        <p>Project write-ups are being added.</p>
                     </div>
                 </div>
             </div>
@@ -182,44 +238,25 @@
 
         <section id="contact" class="section">
             <div class="content-wrapper">
-                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-kicker">05 — Contact</p>
+                <h2 class="section-title">Get in touch</h2>
                 <div class="contact-card">
-                    <p class="contact-text">
-                        I'm currently looking for new opportunities. Whether you have a question or just want to say hi,
-                        I'll try my best to get back to you!
-                    </p>
-                    <div class="social-links">
-                        <a href="mailto:zakiadaniel056@gmail.com" class="social-icon" aria-label="Email" target="_blank"
-                            rel="noopener noreferrer">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round">
-                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
-                                </path>
-                                <polyline points="22,6 12,13 2,6"></polyline>
-                            </svg>
+                    <p class="contact-text">I’m looking for new opportunities. If you have a question or a role in mind,
+                        send a note and I’ll get back to you.</p>
+                    <div class="contact-links">
+                        <a href="mailto:zakiadaniel056@gmail.com" class="contact-link">
+                            <span class="contact-label">Email</span>
+                            <span>zakiadaniel056@gmail.com</span>
                         </a>
-                        <a href="http://github.com/zakiadaniel" class="social-icon" aria-label="GitHub" target="_blank"
+                        <a href="https://github.com/zakiadaniel" class="contact-link" target="_blank"
                             rel="noopener noreferrer">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round">
-                                <path
-                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
-                                </path>
-                            </svg>
+                            <span class="contact-label">GitHub</span>
+                            <span>github.com/zakiadaniel</span>
                         </a>
-                        <a href="https://www.linkedin.com/in/zakia-mohammadi/" class="social-icon" aria-label="LinkedIn"
-                            target="_blank" rel="noopener noreferrer">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round">
-                                <path
-                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
-                                </path>
-                                <rect x="2" y="9" width="4" height="12"></rect>
-                                <circle cx="4" cy="4" r="2"></circle>
-                            </svg>
+                        <a href="https://www.linkedin.com/in/zakia-mohammadi/" class="contact-link" target="_blank"
+                            rel="noopener noreferrer">
+                            <span class="contact-label">LinkedIn</span>
+                            <span>zakia-mohammadi</span>
                         </a>
                     </div>
                 </div>
@@ -228,28 +265,56 @@
     </main>
 
     <footer class="footer">
-        <p>Copyright &copy; 2026 Zakia Mohammadi. All rights reserved.</p>
+        <p>Copyright &copy; 2026 Zakia Mohammadi.</p>
     </footer>
+
     <script>
-        // Smooth scrolling and simple intersection observer for fade-in
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
+        const nav = document.querySelector(".navbar");
+        const navToggle = document.querySelector(".nav-toggle");
+        const navLinks = document.querySelectorAll('.nav-links a');
+
+        navToggle.addEventListener("click", () => {
+            const open = nav.classList.toggle("nav-open");
+            navToggle.setAttribute("aria-expanded", String(open));
+        });
+
+        document.addEventListener("keydown", (event) => {
+            if (event.key === "Escape" && nav.classList.contains("nav-open")) {
+                nav.classList.remove("nav-open");
+                navToggle.setAttribute("aria-expanded", "false");
+                navToggle.focus();
+            }
+        });
+
+        navLinks.forEach((link) => {
+            link.addEventListener("click", () => {
+                nav.classList.remove("nav-open");
+                navToggle.setAttribute("aria-expanded", "false");
+            });
+        });
+
+        const sections = document.querySelectorAll("main section[id]");
+        const navObserver = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (!entry.isIntersecting) return;
+                navLinks.forEach((link) => {
+                    link.classList.toggle("is-active", link.getAttribute("href") === `#${entry.target.id}`);
                 });
             });
-        });
+        }, { rootMargin: "-40% 0px -50% 0px" });
 
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
+        sections.forEach((section) => navObserver.observe(section));
+
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
                 if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
+                    entry.target.classList.add("visible");
+                    revealObserver.unobserve(entry.target);
                 }
             });
-        });
+        }, { threshold: 0.12 });
 
-        document.querySelectorAll('.section, .hero-content, .hero-image-container').forEach((el) => observer.observe(el));
+        document.querySelectorAll(".hero-content, .profile-card, .section").forEach((el) => revealObserver.observe(el));
     </script>
 </body>
 
